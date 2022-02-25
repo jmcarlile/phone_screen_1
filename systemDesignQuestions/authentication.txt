@@ -1,0 +1,12 @@
+Q: Explain how to implement authentication in a full stack app.
+
+A: Main points:
+    Signup:
+ Form for sign up on front end, endpoint for sign-up on back end creates row for user in database. 
+
+    Login:
+form submission of login form, enpoint for login on backend checks to see if username exists in table and if hashed+salted password matches
+the encrpyted password using library like bcrpyt
+
+    Persistance:
+for items like shopping cart there needs to be a user session on the backend and a cookie on the front end that is passed with each request.
